@@ -9,16 +9,16 @@ jobs:
     name: Job
     steps:
       - uses: actions/checkout@v4
-      - run: sleep && echo ${{ github.job }}
+      - run: echo ${{ github.job }}
   job2:
     runs-on: ubuntu-latest
     name: Job
     steps:
       - uses: actions/checkout@v4 
-      - run: sleep 2 && echo ${{ github.job }}
+      - run: echo ${{ github.job }}
   job3:
     runs-on: ubuntu-latest
     name: Job
     steps:
       - uses: actions/checkout@v4
-      - run: sleep 3 && echo ${{ github.job }}
+      - run: echo ${{ github.job }}
