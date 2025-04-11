@@ -19,7 +19,6 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     name: Job
-    id: job3
     steps:
       - uses: actions/checkout@v4
       - run: sleep 3 && echo ${{ github.job }}
