@@ -9,16 +9,16 @@ jobs:
     name: Job
     steps:
       - uses: actions/checkout@v4
-      - run: echo ${{ github.job }}
+      - run: echo ${{ toJSON(github) }} } | jq .
   job2:
     runs-on: ubuntu-latest
     name: Job
     steps:
       - uses: actions/checkout@v4 
-      - run: echo ${{ github.job }}
+      - run: echo ${{ toJSON(github) }} } | jq .
   job3:
     runs-on: ubuntu-latest
     name: Job
     steps:
       - uses: actions/checkout@v4
-      - run: echo ${{ github.job }}
+      - run: echo ${{ toJSON(github) }} } | jq .
