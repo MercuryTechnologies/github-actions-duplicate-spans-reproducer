@@ -32,4 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "I am a PR"
-      - run: echo "I am run on the main branch"
+      - run: echo "I am run on the main branch with an update"
