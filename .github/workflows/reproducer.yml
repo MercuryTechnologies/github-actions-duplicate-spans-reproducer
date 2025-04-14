@@ -28,3 +28,7 @@ jobs:
       - run: echo "$github"
         env:
           github: ${{ toJSON(github) }}
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "I am a PR"
